@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IConnect -Calender</title>
+    <!-- Tailwind via CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/
+6.4.0/css/all.min.css">
+</head>
+<body class="bg-gradient-to-br from-pink-50 via-rose-50 to-pink-100 min-h-screen flex flex-col">
+    <!-- NAVBAR (imported file) -->
+    <iframe src="nav-bar.html" class="w-full h-20 border-none"></iframe>
+   <!-- MAIN CONTENT -->
+    <main class="flex-1 py-12 px-6">
+        <div class="w-full max-w-4xl mx-auto">
+
+            <h1 class="text-4xl font-bold text-gray-900 mb-10 text-center">
+                Calendar
+            </h1>
+
+            <div class="bg-white rounded-2xl shadow-xl p-8 border border-gray-100">
+
+                <!-- HEADER -->
+                <div class="flex items-center justify-between mb-6">
+                    <button class="text-xl font-bold text-gray-700 hover:text-red-600">←</button>
+
+                    <h2 class="text-2xl font-semibold text-gray-900">Activities Calendar</h2>
+
+                    <div class="text-3xl">👤</div>
+                </div>
+
+                <!-- MONTH NAV -->
+                <div class="flex justify-center items-center space-x-6 mb-6">
+                    <button class="text-2xl font-bold text-gray-700 hover:text-red-600">‹</button>
+                    <span class="text-xl font-bold text-gray-900">Dec 2025</span>
+                    <button class="text-2xl font-bold text-gray-700 hover:text-red-600">›</button>
+                </div>
+
+                <!-- DAYS LABEL -->
+                <div class="grid grid-cols-7 text-center font-semibold text-gray-600 mb-2">
+                    <div>L</div>
+                    <div>M</div>
+                    <div>M</div>
+                    <div>J</div>
+                    <div>V</div>
+                    <div>S</div>
+                    <div>D</div>
+                </div>
+
+                <!-- CALENDAR GRID -->
+                <div class="grid grid-cols-7 gap-3 text-center text-gray-800">
+
+                    <!-- Previous Month -->
+                    <div class="text-gray-400">31</div>
+
+                    <!-- First Week -->
+                    <div class="p-3 rounded-xl hover:bg-gray-100 cursor-pointer">1</div>
+                    <div class="p-3 rounded-xl bg-red-100 text-red-700 font-bold hover:bg-red-200 cursor-pointer">2🏀</div>
+                    <div class="p-3 rounded-xl hover:bg-gray-100 cursor-pointer">3</div>
+                    <div class="p-3 rounded-xl bg-red-100 text-red-700 font-bold">4🎭</div>
+                    <div class="p-3 rounded-xl hover:bg-gray-100 cursor-pointer">5</div>
+                    <div class="p-3 rounded-xl bg-red-100 text-red-700 font-bold">6🎨</div>
+
+                    <!-- Second Week -->
+                    <div class="p-3 rounded-xl hover:bg-gray-100 cursor-pointer">7</div>
+                    <div class="p-3 rounded-xl hover:bg-gray-100 cursor-pointer">8</div>
+                    <div class="p-3 rounded-xl hover:bg-gray-100 cursor-pointer">9</div>
+                    <div class="p-3 rounded-xl hover:bg-gray-100 cursor-pointer">10</div>
+                    <div class="p-3 rounded-xl hover:bg-gray-100 cursor-pointer">11</div>
+                    <div class="p-3 rounded-xl bg-red-100 text-red-700 font-bold">12🎨</div>
+                    <div class="p-3 rounded-xl hover:bg-gray-100 cursor-pointer">13</div>
+
+                    <!-- Third Week -->
+                    <div class="p-3 rounded-xl hover:bg-gray-100 cursor-pointer">14</div>
+                    <div class="p-3 rounded-xl bg-red-100 text-red-700 font-bold">15🏀</div>
+                    <div class="p-3 rounded-xl hover:bg-gray-100 cursor-pointer">16</div>
+                    <div class="p-3 rounded-xl hover:bg-gray-100 cursor-pointer">17</div>
+                    <div class="p-3 rounded-xl hover:bg-gray-100 cursor-pointer">18</div>
+                    <div class="p-3 rounded-xl hover:bg-gray-100 cursor-pointer">19</div>
+                    <div class="p-3 rounded-xl hover:bg-gray-100 cursor-pointer">20</div>
+
+                    <!-- Fourth Week -->
+                    <div class="p-3 rounded-xl hover:bg-gray-100 cursor-pointer">21</div>
+                    <div class="p-3 rounded-xl hover:bg-gray-100 cursor-pointer">22</div>
+                    <div class="p-3 rounded-xl hover:bg-gray-100 cursor-pointer">23</div>
+                    <div class="p-3 rounded-xl bg-red-100 text-red-700 font-bold">24📖</div>
+                    <div class="p-3 rounded-xl hover:bg-gray-100 cursor-pointer">25</div>
+                    <div class="p-3 rounded-xl hover:bg-gray-100 cursor-pointer">26</div>
+                    <div class="p-3 rounded-xl hover:bg-gray-100 cursor-pointer">27</div>
+
+                    <!-- Fifth Week -->
+                    <div class="p-3 rounded-xl hover:bg-gray-100 cursor-pointer">28</div>
+                    <div class="p-3 rounded-xl bg-red-100 text-red-700 font-bold">29📖</div>
+                    <div class="p-3 rounded-xl hover:bg-gray-100 cursor-pointer">30</div>
+                    <div class="p-3 rounded-xl bg-red-100 text-red-700 font-bold">31🎭</div>
+
+                    <!-- Next Month -->
+                    <div class="text-gray-400">1</div>
+                    <div class="text-gray-400">2</div>
+                    <div class="text-gray-400">3</div>
+
+                </div>
+
+                <!-- BUTTON -->
+                <div class="mt-8 flex justify-center">
+                    <button class="bg-red-600 text-white px-6 py-3 rounded-xl font-bold hover:bg-red-700 transition-all shadow-md hover:shadow-xl">
+                        Add New Activity
+                    </button>
+                </div>
+
+            </div>
+        </div>
+    </main>  
+
+          <!-- FOOTER (imported file) -->
+    <iframe src="footer.html" class="w-full h-64 border-none mt-10"></iframe>
+</body>
+</html>
+
+
+
+
+
+
