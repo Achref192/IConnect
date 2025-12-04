@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="an">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Activity</title>
+
+    <!-- Tailwind via CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    
+   <nav class="bg-white shadow-sm">
+    <div class="max-w-7xl mx-auto px-6 py-4">
+        <div class="flex items-center justify-between">
+
+            <!-- Logo -->
+            <div class="text-2xl font-bold text-red-800">ICONNECT</div>
+
+            <!-- Menu items -->
+            <div class="hidden md:flex items-center space-x-8">
+                <a href="Home.html" class="text-red-800 font-semibold hover:text-red-600 transition-colors">Home</a>
+                <a href="Calendrier.html" class="text-red-800 font-semibold hover:text-red-600 transition-colors">Activities</a>
+                <a href="eventList.html" class="text-red-800 font-semibold hover:text-red-600 transition-colors">Matching</a>
+                <a href="About Us.html" class="text-red-800 font-semibold hover:text-red-600 transition-colors">About Us</a>
+            </div>
+
+            <!-- Right side: button + user icon -->
+            <div class="flex items-center gap-4">
+                <a href="profile.html" class="text-red-800 text-2xl hover:text-red-600 transition">
+    <i class="fa-solid fa-user"></i>
+</a>
+
+                <!-- Logout button -->
+                <button class="flex items-center gap-2 bg-red-800 text-white px-6 py-2 rounded-full 
+                               hover:bg-red-700 transition-all shadow-md hover:shadow-lg">
+                    <span class="font-semibold">Log out</span>
+                    <i class="fas fa-sign-out-alt"></i>
+                </button>
+
+                <!-- User icon -->
+                
+            </div>
+
+        </div>
+    </div>
+</nav>
+</head>
+
+
+<body class="min-h-screen flex flex-col bg-gradient-to-br from-white bg-[radial-gradient(circle_at_center)via-[rgba(255,200,200,0.55)] to-[rgba(255,80,80,0.65)]">
+
+    
+<br></br>
+
+    
+    
+
+    <h1 class="text-4xl font-bold text-gray-900 mb-8 text-center"> Activity</h1>
+    <!-- Modal -->
+    <div class="w-full max-w-2xl mx-auto bg-white rounded-2xl shadow-xl p-8 border border-gray-100">
+
+
+         <button class="text-xl font-bold text-gray-700 hover:text-red-600"onclick="history.back()">←</button>
+
+
+         
+        
+
+        
+                  
+        
+
+        <!-- Title -->
+        <h2 class="text-center text-2xl font-bold text-red-800 mb-4">"NBA"</h2>
+
+        <hr class="border-red-200 mb-4" />
+
+        <!-- Place + Date -->
+        <div class="space-y-3 text-gray-800">
+            <div class="flex justify-between text-med">
+                <span class="font-bold">Place :</span>
+                <span class="font-bold">Terrain Esprit</span>
+                
+            </div>
+
+            <div class="flex justify-between text-med">
+                <span class="font-bold">Date :</span>
+                <span class="font-bold">12/12/25 15:30</span>
+                
+            </div>
+        </div>
+
+        <hr class="border-red-200 my-4" />
+
+        <!-- Join Buttons -->
+        <div class="flex items-center justify-between">
+            <a href="MyProfile.html"
+   class="bg-red-700 text-white px-5 py-2 rounded-lg shadow hover:bg-red-600 font-bold">
+    Join
+</a>
+
+            <a href="Calendrier.html" class="bg-white text-gray-700 px-5 py-2 rounded-lg border hover:bg-gray-100 font-bold">
+                Not Sure
+            </a>
+
+            <a href="Calendrier.html" class="bg-white text-gray-700 px-5 py-2 rounded-lg border hover:bg-gray-100 font-bold">
+                I'm not joining
+            </a>
+        </div>
+
+        <hr class="border-red-200 my-4" />
+
+        <!-- Members + Invite -->
+        <div class="flex items-center justify-between mb-4">
+            <div class="flex items-center gap-3">
+                <label class="font-bold text-md">Members :</label>
+
+                <select class="font-bold border border-gray-300 rounded-lg px-3 py-2 text-md bg-red-700 text-white">
+                    
+                    <option>Adem Chebbi</option>
+                    <option>Achref Arfaoui</option>
+                    <option>Moemen Ouled Ali</option>
+                    <option>Ines Manai</option>
+                    <option>Erij Ben Saleh </option>
+                     <option>Ibtihel Mechergui</option>
+                </select>
+            </div>
+
+            <button class=" font-bold bg-red-700 text-white px-4 py-2 rounded-lg shadow hover:bg-red-600">
+                Invite
+            </button>
+        </div>
+
+        <!-- Chat -->
+        <div class="mt-2">
+            <h3 class="font-bold text-md mb-2">Chat 💬</h3>
+
+            <div class="bg-gray-50 border rounded-xl p-4 h-48 overflow-y-auto text-md space-y-3">
+
+                <!-- Messages -->
+                <div>
+                    <span class="font-bold text-red-700">Adem Chebbi :</span>
+                    <span class="text-gray-700">I'll be there in 20 minutes</span>
+                </div>
+
+                <div>
+                    <span class="font-bold text-red-700">Achref Arfaoui :</span>
+                    <span class="text-gray-700">Okay cool !</span>
+                </div>
+
+                <!-- Typing -->
+                <div class="italic text-gray-500 text-xs">Adem is typing...</div>
+            </div>
+
+            <!-- Message Input -->
+            <div class="flex items-center gap-2 mt-3">
+                <input
+                    type="text"
+                    placeholder="Write your message here..."
+                    class="flex-1 px-4 py-3 border rounded-xl outline-none focus:ring-2 focus:ring-red-700"
+                />
+
+                <!-- Attachment Button -->
+                <button class="bg-gray-100 text-gray-700 p-3 rounded-xl hover:bg-gray-200">
+                    <i class="fas fa-paperclip"></i>
+                </button>
+
+                <!-- Send Button -->
+                <button class="bg-red-700 text-white p-3 rounded-xl hover:bg-red-600">
+                    <i class="fa-solid fa-paper-plane"></i>
+                </button>
+            </div>
+        </div>
+
+    </div>
+
+
+
+
+
+
+
+
+    <!-- FOOTER (imported file) -->
+    <iframe src="footer.html" class="w-full h-64 border-none mt-10"></iframe>
+
+</body>
+</html>

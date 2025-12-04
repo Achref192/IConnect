@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>IConnect - Progress History</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <nav class="bg-white shadow-sm">
+    <div class="max-w-7xl mx-auto px-6 py-4">
+        <div class="flex items-center justify-between">
+
+            <!-- Logo -->
+            <div class="text-2xl font-bold text-red-800">ICONNECT</div>
+
+            <!-- Menu items -->
+            <div class="hidden md:flex items-center space-x-8">
+                <a href="Home.html" class="text-red-800 font-semibold hover:text-red-600 transition-colors">Home</a>
+                <a href="Calendrier.html" class="text-red-800 font-semibold hover:text-red-600 transition-colors">Activities</a>
+                <a href="eventList.html" class="text-red-800 font-semibold hover:text-red-600 transition-colors">Matching</a>
+                <a href="About Us.html" class="text-red-800 font-semibold hover:text-red-600 transition-colors">About Us</a>
+            </div>
+
+            <!-- Right side: button + user icon -->
+            <div class="flex items-center gap-4">
+                <a href="profile.html" class="text-red-800 text-2xl hover:text-red-600 transition">
+    <i class="fa-solid fa-user"></i>
+</a>
+
+                <!-- Logout button -->
+                <button class="flex items-center gap-2 bg-red-800 text-white px-6 py-2 rounded-full 
+                               hover:bg-red-700 transition-all shadow-md hover:shadow-lg">
+                    <span class="font-semibold">Log out</span>
+                    <i class="fas fa-sign-out-alt"></i>
+                </button>
+
+                <!-- User icon -->
+                
+            </div>
+
+        </div>
+    </div>
+</nav>
+</head>
+
+<body class="min-h-screen flex flex-col bg-gradient-to-br from-white bg-[radial-gradient(circle_at_center)via-[rgba(255,200,200,0.55)] to-[rgba(255,80,80,0.65)]">
+    <!-- WRAPPER -->
+    <div class="max-w-full">
+
+      
+
+        <!-- MAIN -->
+        <main class="p-10 flex justify-center">
+            <div class="bg-white w-full max-w-6xl rounded-3xl shadow-xl p-10 relative">
+
+                <!-- Back -->
+                <a href="mysucc.html"
+                   class="absolute left-6 top-6 text-red-700 text-3xl font-bold hover:text-red-800 transition">
+                    &larr;
+                </a>
+
+                <!-- Title -->
+                <h1 class="text-4xl font-extrabold text-center mb-14 drop-shadow-md text-gray-900">
+                    Progress History
+                </h1>
+
+                <!-- GRID -->
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
+
+                    <!-- CARD 1 -->
+                    <div class="p-7 rounded-2xl shadow-lg flex flex-col" style="background:#EEC0F2;">
+                        <div class="flex justify-between mb-4">
+                            <span class="bg-green-300 text-gray-800 font-semibold text-xs px-3 py-1 rounded-full">
+                                Level Up
+                            </span>
+                            <span class="bg-green-200 text-gray-800 font-semibold text-xs px-3 py-1 rounded-full">
+                                +150 pts
+                            </span>
+                        </div>
+
+                        <h3 class="font-extrabold text-lg mb-3 text-gray-900">Level 6 Reached</h3>
+
+                        <p class="text-gray-700 text-sm leading-relaxed flex-grow">
+                            Congratulations! You reached Level 6. Keep going to unlock more rewards.
+                        </p>
+
+                        <p class="text-gray-900 font-semibold text-right text-sm mt-6">
+                            23 Feb 2025
+                        </p>
+                    </div>
+
+                    <!-- CARD 2 -->
+                    <div class="p-7 rounded-2xl shadow-lg flex flex-col" style="background:rgba(238,192,242,0.5);">
+                        <div class="flex justify-between mb-4">
+                            <span class="bg-yellow-300 text-gray-800 font-semibold text-xs px-3 py-1 rounded-full">
+                                Trait Unlock
+                            </span>
+                            <span class="bg-yellow-200 text-gray-800 font-semibold text-xs px-3 py-1 rounded-full">
+                                +400 pts
+                            </span>
+                        </div>
+
+                        <h3 class="font-extrabold text-lg mb-3 text-gray-900 leading-tight">
+                            New Trait Unlocked: Collaborative
+                        </h3>
+
+                        <p class="text-gray-700 text-sm leading-relaxed flex-grow">
+                            You unlocked the Collaborative trait. Great teamwork and synergy!
+                        </p>
+
+                        <p class="text-gray-900 font-semibold text-right text-sm mt-6">
+                            14 Feb 2025
+                        </p>
+                    </div>
+
+                    <!-- CARD 3 -->
+                    <div class="p-7 rounded-2xl shadow-lg flex flex-col" style="background:rgba(238,192,242,0.23);">
+                        <div class="flex justify-between mb-4">
+                            <span class="bg-yellow-300 text-gray-800 font-semibold text-xs px-3 py-1 rounded-full">
+                                Trait Unlock
+                            </span>
+                            <span class="bg-yellow-200 text-gray-800 font-semibold text-xs px-3 py-1 rounded-full">
+                                +400 pts
+                            </span>
+                        </div>
+
+                        <h3 class="font-extrabold text-lg mb-3 text-gray-900 leading-tight">
+                            New Trait Unlocked: Creative
+                        </h3>
+
+                        <p class="text-gray-700 text-sm leading-relaxed flex-grow">
+                            You unlocked the Creative trait thanks to your exceptional performance.
+                        </p>
+
+                        <p class="text-gray-900 font-semibold text-right text-sm mt-6">
+                            10 Feb 2025
+                        </p>
+                    </div>
+
+                </div>
+
+                <!-- PAGINATION -->
+                <div class="flex justify-center items-center space-x-4 text-gray-700 mt-12 text-sm">
+                    <span class="opacity-50 cursor-not-allowed">&larr; Previous</span>
+                    <span class="px-3 py-1 bg-gray-800 text-white rounded cursor-pointer">1</span>
+                    <span class="px-2 cursor-pointer hover:bg-gray-200 rounded">2</span>
+                    <span>...</span>
+                    <span class="cursor-pointer hover:text-red-600">Next →</span>
+                </div>
+
+                <!-- BUTTON -->
+                <div class="flex justify-center mt-10">
+                    <a href="trait.html"
+                       class="bg-red-800 text-white px-10 py-3 rounded-lg font-semibold hover:bg-red-900 transition inline-block">
+                        Analyze my traits
+                    </a>
+                </div>
+
+            </div>
+        </main>
+
+        <!-- FOOTER -->
+        <iframe src="footer.html" class="w-full h-64 border-none mt-10"></iframe>
+
+    </div>
+
+</body>
+</html>

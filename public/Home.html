@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>iConnect – Home</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="font-[Segoe_UI,system-ui] min-h-screen flex flex-col overflow-x-hidden
+             bg-[radial-gradient(circle_at_center,white,rgba(255,180,180,0.55),rgba(255,80,80,0.60))]">
+
+  <!-- ================= NAVBAR ================= -->
+  <header class="w-full bg-white shadow-sm sticky top-0 z-50">
+    <nav class="bg-white shadow-sm">
+    <div class="max-w-7xl mx-auto px-6 py-4">
+        <div class="flex items-center justify-between">
+            <div class="text-2xl font-bold text-red-800">ICONNECT</div>
+
+            <div class="hidden md:flex items-center space-x-8">
+                <a href="Home.html" class="text-red-800 font-semibold hover:text-red-600 transition-colors">Home</a>
+                <a href="Calendrier.html" class="text-red-800 font-semibold hover:text-red-600 transition-colors">Activities</a>
+                <a href="eventList.html" class="text-red-800 font-semibold hover:text-red-600 transition-colors">Matching</a>
+                <a href="About Us.html" class="text-red-800 font-semibold hover:text-red-600 transition-colors">About Us</a>
+            </div>
+
+            <a href="signup.html">
+    <button class="flex items-center gap-2 bg-red-800 text-white px-6 py-2 rounded-full hover:bg-red-700 transition-all shadow-md hover:shadow-lg">
+        <span class="font-semibold">Sign Up</span>
+        <i class="fas fa-sign-out-alt"></i>
+    </button>
+</a>
+        </div>
+    </div>
+</nav>
+  </header>
+
+  <!-- ================= HERO SECTION ================= -->
+ <section class="w-full pt-24 pb-28 flex flex-col items-center text-center px-6">
+
+  <h1 class="text-4xl md:text-5xl font-extrabold text-gray-900 leading-tight">
+    Share moments<br>
+    Build connections<br>
+    Live Fully
+  </h1>
+
+  <!-- MORE SPACE from text → buttons -->
+  <div class="mt-16 flex gap-4">
+    <a href="eventList.html">
+    <button class="bg-[#a00000] text-white px-10 py-2 rounded-full shadow hover:bg-[#7c0000] transition">
+        Join Activity
+    </button>
+</a>
+
+        <a href="Profil.html">
+    <button class="bg-white border border-gray-300 px-10 py-2 rounded-full hover:bg-gray-100 transition">
+      My Achievement
+    </button>
+    </a>
+  </div>
+
+  <!-- MORE SPACE from buttons → images -->
+  <div class="mt-40 flex justify-center items-start gap-4 relative w-full overflow-visible" style="min-height: 400px;">
+    <div class="relative -ml-32">
+      <img src="../assets/nba.png" class="w-52 h-72 rounded-lg shadow-lg object-cover">
+    </div>
+    <div class="relative mt-6">
+      <img src="../assets/1.png" class="w-52 h-72 rounded-lg shadow-lg object-cover">
+    </div>
+    <div class="relative mt-12 -mr-32">
+      <img src="../assets/takwira.png" class="w-52 h-72 rounded-lg shadow-lg object-cover">
+    </div>
+  </div>
+  <p class="max-w-[950px] mx-auto text-center px-6 mt-10 mb-24 text-lg md:text-xl font-medium leading-relaxed text-gray-900">
+      <span class="text-[#a00000] font-bold">iConnect is a university application</span>
+      that allows students to easily find a group to share an activity with, whether academic,
+      sports, or cultural. Each student can also create and host their own group to organize
+      an activity and invite other participants.
+    </p>
+
+</section>
+
+
+
+  
+
+  <!-- ================= FEATURES SECTION ================= -->
+  <section class="max-w-[1100px] mx-auto px-6 mb-24">
+
+    <h2 class="text-3xl font-extrabold text-center mb-2">Everything You Need</h2>
+    <p class="text-center text-sm text-gray-600 mb-10">
+      Features designed for university students using iConnect
+    </p>
+
+    <div class="grid md:grid-cols-3 gap-6">
+
+      <!-- Feature Card -->
+      <div
+        <div class="border border-red-200 rounded-lg p-6 text-center shadow-sm hover:shadow-md transition">
+                <div class="mb-3 flex justify-center">
+                <img src="../assets/icons/shield.png" class="w-12 h-12 object-contain" alt="Shield Icon">
+                </div>
+        <h3 class="font-semibold mb-2">Security</h3>
+        <p class="text-sm text-gray-600">
+          All events are secure and supervised properly.
+        </p>
+      </div>
+
+      <div class="border border-red-200 rounded-lg p-6 text-center shadow-sm hover:shadow-md transition">
+                <div class="mb-3 flex justify-center">
+                <img src="../assets/icons/grps.png" class="w-12 h-12 object-contain" alt="grps Icon">
+                </div>
+        <h3 class="font-semibold mb-2">Themed Groups</h3>
+        <p class="text-sm text-gray-600">Join sports, music, study groups, and more.</p>
+      </div>
+
+      <div class="border border-red-200 rounded-lg p-6 text-center shadow-sm hover:shadow-md transition">
+                <div class="mb-3 flex justify-center">
+                <img src="../assets/icons/organization.png" class="w-12 h-12 object-contain" alt="Organization Icon">
+                </div>
+        <h3 class="font-semibold mb-2">Easy Organization</h3>
+        <p class="text-sm text-gray-600">Plan activities with just a few clicks.</p>
+      </div>
+
+                <div class="border border-red-200 rounded-lg p-6 text-center shadow-sm hover:shadow-md transition">
+                <div class="mb-3 flex justify-center">
+                <img src="../assets/icons/chatbot.png" class="w-12 h-12 object-contain" alt="Chatbot Icon">
+                </div>
+
+                <h3 class="font-semibold mb-2">Smart iConnectBot</h3>
+                <p class="text-sm text-gray-600">Your assistant for reminders & schedule.</p>
+                </div>
+
+      <div class="border border-red-200 rounded-lg p-6 text-center shadow-sm hover:shadow-md transition">
+                <div class="mb-3 flex justify-center">
+                <img src="../assets/icons/notif.png" class="w-12 h-12 object-contain" alt="notif Icon">
+                </div>
+        <h3 class="font-semibold mb-2">Instant Notifications</h3>
+        <p class="text-sm text-gray-600">Get updates on activities and groups.</p>
+      </div>
+
+      <div class="border border-red-200 rounded-lg p-6 text-center shadow-sm hover:shadow-md transition">
+                <div class="mb-3 flex justify-center">
+                <img src="../assets/icons/community.png" class="w-12 h-12 object-contain" alt="Community Icon">
+                </div>
+        <h3 class="font-semibold mb-2">Community Impact</h3>
+        <p class="text-sm text-gray-600">Connect with people who share your values.</p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ================= UPCOMING ACTIVITIES ================= -->
+  <section class="max-w-[1100px] mx-auto px-6 mb-24">
+
+    <h2 class="text-2xl font-extrabold mt-10 mb-6">Upcoming Activities</h2>
+
+    <div class="flex gap-6 flex-wrap justify-center">
+
+  <!-- Activity 1 -->
+  <div class="relative border border-red-300 rounded-lg p-4 shadow bg-white w-80">
+      <!-- Image -->
+      <img src="../assets/1.png" class="h-56 w-full object-cover rounded-lg mb-3">
+
+      <!-- Date Badge -->
+      <div class="absolute -top-3 left-3 bg-[#a00000] text-white text-sm px-3 py-1.5 rounded">
+        27 Dec
+      </div>
+
+      <!-- Add / Join Button -->
+      <a href="activity.html">
+        <button 
+            class="absolute bottom-3 right-3 text-[#AE0505] text-5xl"
+            type="button"
+        >
+          +
+        </button>
+      </a>
+
+      <!-- Title -->
+      <p class="font-semibold mt-2 text-lg">Camping in Bizerte</p>
+  </div>
+
+  <!-- Activity 2 -->
+  <div class="relative border border-red-300 rounded-lg p-4 shadow bg-white w-80">
+      <!-- Image -->
+      <img src="../assets/takwira.png" class="h-56 w-full object-cover rounded-lg mb-3">
+
+      <!-- Date Badge -->
+      <div class="absolute -top-3 left-3 bg-[#a00000] text-white text-sm px-3 py-1.5 rounded">
+        02 Nov
+      </div>
+
+      <!-- Add / Join Button -->
+      <a href="activity.html">
+        <button 
+            class="absolute bottom-3 right-3 text-[#AE0505] text-5xl"
+            type="button"
+        >
+          +
+        </button>
+      </a>
+
+      <!-- Title -->
+      <p class="font-semibold mt-2 text-lg">Takwira at Esprit</p>
+  </div>
+
+</div>
+  </section>
+
+  <!-- ================= RECENT ACTIVITIES ================= -->
+  <section class="max-w-[1100px] mx-auto px-6 mb-24">
+
+    <h2 class="text-2xl font-extrabold text-center mb-2">Recent Activities</h2>
+
+    <div class="grid md:grid-cols-3 gap-8 mt-10">
+
+      <!-- Card 1 -->
+      <div class="border border-red-300 rounded-lg shadow p-4 text-center">
+        <img src="../assets/1.png" class="h-44 w-full rounded-lg object-cover mb-3">
+        <h3 class="font-semibold mb-2">“Campers”</h3>
+        <p class="text-sm text-gray-600 mb-4">
+          Enjoy a relaxing outdoor camping trip with hiking, 
+          campfire activities, and time to connect with nature. 
+          Perfect for all experience levels, 
+          this event offers a fun and peaceful escape.
+        </p>
+        
+      </div>
+
+      <!-- Card 2 -->
+      <div class="border border-red-300 rounded-lg shadow p-4 text-center">
+        <img src="../assets/takwira.png" class="h-44 w-full rounded-lg object-cover mb-3">
+        <h3 class="font-semibold mb-2">“Takwira”</h3>
+        <p class="text-sm text-gray-600 mb-4">
+          Join us for an exciting football match where teams compete in a friendly, 
+          energetic atmosphere. 
+          A great chance to show your skills, stay active, and enjoy the game.
+        </p>
+        
+      </div>
+
+      <!-- Card 3 -->
+      <div class="border border-red-300 rounded-lg shadow p-4 text-center">
+        <img src="../assets/nba.png" class="h-44 w-full rounded-lg object-cover mb-3">
+        <h3 class="font-semibold mb-2">“NBA”</h3>
+        <p class="text-sm text-gray-600 mb-4">
+          Take part in a fast-paced basketball event filled with quick plays, 
+          teamwork, and friendly competition. 
+          Open to all players who want to have fun and improve their game.
+        </p>
+        
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ================= REVIEWS ================= -->
+  <section class="max-w-[1100px] mx-auto px-6 mb-24">
+
+    <h2 class="text-2xl font-extrabold text-center mb-10">Reviews</h2>
+
+    <div class="grid md:grid-cols-3 gap-6">
+
+      <!-- Review Card -->
+      <div class="border border-red-200 rounded-lg p-5 shadow bg-white">
+        <div class="flex items-center gap-3 mb-3">
+          <img src="../assets/shakira.png" class="w-10 h-10 rounded-full">
+          <p>⭐⭐⭐⭐⭐</p>
+        </div>
+        <p class="text-sm text-gray-600">
+          “Great camping trip! The group was super friendly…”
+        </p>
+        <p class="text-xs text-right text-gray-500">Shakira Isabel</p>
+      </div>
+
+      <div class="border border-red-200 rounded-lg p-5 shadow bg-white">
+        <div class="flex items-center gap-3 mb-3">
+          <img src="../assets/shakira.png" class="w-10 h-10 rounded-full">
+          <p>⭐⭐⭐⭐⭐</p>
+        </div>
+        <p class="text-sm text-gray-600">“The game was super fun! The teams were balanced…”</p>
+        <p class="text-xs text-right text-gray-500">Shakira Isabel</p>
+      </div>
+
+      <div class="border border-red-200 rounded-lg p-5 shadow bg-white">
+        <div class="flex items-center gap-3 mb-3">
+          <img src="../assets/shakira.png" class="w-10 h-10 rounded-full">
+          <p>⭐⭐⭐⭐⭐</p>
+        </div>
+        <p class="text-sm text-gray-600">“The NBA event was amazing, everyone enjoyed it…”</p>
+        <p class="text-xs text-right text-gray-500">Shakira Isabel</p>
+      </div>
+
+    </div>
+
+  </section>
+  </body>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="bg-gray-50 border-t border-gray-200 p-6  bottom-0 left-0 w-full">
+    <div class="max-w-7xl mx-auto">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div>
+    <div class="mb-2">
+        <img src="../assets/esprit.png" alt="ESPRIT Logo" class="w-24 h-auto">
+    </div>
+    <div class="text-sm text-gray-600">
+        École Supérieure Privée d'Ingénierie et de Technologies
+    </div>
+</div>
+
+            <div>
+                <h3 class="text-red-800 font-bold mb-4">Contact</h3>
+                <ul class="space-y-2 text-sm text-gray-600">
+                    <li class="flex items-center gap-2">
+                        <i class="fa-brands fa-facebook text-red-800"></i>
+                        <a href="#" class="hover:text-red-800 transition-colors">Facebook</a>
+                    </li>
+                    <li class="flex items-center gap-2">
+                        <i class="fa-brands fa-linkedin text-red-800"></i>
+                        <a href="#" class="hover:text-red-800 transition-colors">LinkedIn</a>
+                    </li>
+                    <li class="flex items-center gap-2">
+                        <i class="fa-brands fa-instagram text-red-800"></i>
+                        <a href="#" class="hover:text-red-800 transition-colors">Instagram</a>
+                    </li>
+                    <li class="flex items-center gap-2">
+                        <i class="fa-brands fa-twitter text-red-800"></i>
+                        <a href="#" class="hover:text-red-800 transition-colors">Twitter</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div>
+                <h3 class="text-red-800 font-bold mb-4">IConnect Team</h3>
+                <ul class="space-y-2 text-sm text-gray-600">
+                    <li>Adem Chebbi</li>
+                    <li>Achref Arfaoui</li>
+                    <li>Erij Ben Saleh</li>
+                    <li>Ines Manai</li>
+                    <li>Moemen Ouled Ali</li>
+                    <li>Ibtihel Mechergui</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="border-t border-gray-200 mt-1 pt-1 text-center text-sm text-gray-600">
+            © 2025 IConnect — All Rights Reserved
+        </div>
+    </div>
+</footer>
+
+
+
+</html>

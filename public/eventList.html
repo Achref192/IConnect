@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>iConnect – Your activity matches</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+
+<body class="font-[Segoe_UI,system-ui] min-h-screen flex flex-col
+             bg-[radial-gradient(circle_at_center,white,rgba(255,200,200,0.55),rgba(255,80,80,0.65))]">
+
+   <nav class="bg-white shadow-sm">
+    <div class="max-w-7xl mx-auto px-6 py-4">
+        <div class="flex items-center justify-between">
+
+            <!-- Logo -->
+            <div class="text-2xl font-bold text-red-800">ICONNECT</div>
+
+            <!-- Menu items -->
+            <div class="hidden md:flex items-center space-x-8">
+                <a href="Home.html" class="text-red-800 font-semibold hover:text-red-600 transition-colors">Home</a>
+                <a href="Calendrier.html" class="text-red-800 font-semibold hover:text-red-600 transition-colors">Activities</a>
+                <a href="eventList.html" class="text-red-800 font-semibold hover:text-red-600 transition-colors">Matching</a>
+                <a href="About Us.html" class="text-red-800 font-semibold hover:text-red-600 transition-colors">About Us</a>
+            </div>
+
+            <!-- Right side: button + user icon -->
+            <div class="flex items-center gap-4">
+                <a href="profile.html" class="text-red-800 text-2xl hover:text-red-600 transition">
+    <i class="fa-solid fa-user"></i>
+</a>
+
+                <!-- Logout button -->
+                <button class="flex items-center gap-2 bg-red-800 text-white px-6 py-2 rounded-full 
+                               hover:bg-red-700 transition-all shadow-md hover:shadow-lg">
+                    <span class="font-semibold">Log out</span>
+                    <i class="fas fa-sign-out-alt"></i>
+                </button>
+
+                <!-- User icon -->
+                
+            </div>
+
+        </div>
+    </div>
+</nav>
+
+  <main class="flex-1 flex flex-col items-center mt-12 mb-16">
+
+    <section class="max-w-[1100px] w-full px-8">
+
+     
+      <h2 class="text-4xl font-extrabold text-white drop-shadow-sm mb-2">
+        Your activity matches
+      </h2>
+      <p class="text-sm text-white/90 mb-6 max-w-xl leading-relaxed">
+        Based on your profile, we’ve found activities that fit your vibe. The higher the match,
+        the more likely you’ll enjoy it.
+      </p>
+
+      <div class="flex gap-2 mb-8">
+        <button class="px-4 py-1.5 rounded-full bg-[#2b2b2b] text-white text-xs">All</button>
+        <button class="px-4 py-1.5 rounded-full bg-[#3b3b3b] text-white text-xs">Sports</button>
+        <button class="px-4 py-1.5 rounded-full bg-[#3b3b3b] text-white text-xs">Outdoor</button>
+        <button class="px-4 py-1.5 rounded-full bg-[#3b3b3b] text-white text-xs">Academic</button>
+        <button class="px-4 py-1.5 rounded-full bg-[#3b3b3b] text-white text-xs">Social</button>
+      </div>
+
+      <!-- Cards grid -->
+      <div class="grid lg:grid-cols-3 md:grid-cols-2 gap-6">
+
+        <!-- ========== CARD 1 ========== -->
+        <article class="bg-white rounded-[24px] shadow-xl border border-gray-200 overflow-hidden min-h-[360px] flex flex-col">
+          <div class="flex justify-between items-center px-5 pt-3 text-[10px]">
+            <span class="px-3 py-1 rounded-full bg-[#b00020] text-white">Trending</span>
+            <span class="px-3 py-1 rounded-full bg-gray-800 text-white">5 spots left</span>
+          </div>
+
+          <div class="px-5 mt-2">
+            <div class="w-full h-32 rounded-2xl bg-cover bg-center"
+                 style="background-image:url('assets/campers.jpg');"></div>
+          </div>
+
+          <div class="flex-1 px-5 pt-3 pb-4 flex flex-col justify-between">
+            <div>
+              <div class="flex justify-between items-start gap-2">
+                <h3 class="font-semibold text-[15px] leading-snug">
+                  Campers · Weekend Escape
+                </h3>
+                <div class="bg-emerald-500 text-white rounded-full px-3 py-2 text-[10px] text-center leading-tight">
+                  <div class="font-bold text-[12px]">92%</div>
+                  <div>GREAT</div>
+                  <div>MATCH</div>
+                </div>
+              </div>
+
+              <p class="text-xs text-gray-600 mt-2 mb-3 leading-snug">
+                Night hike, campfire stories, and a sunrise breakfast.
+              </p>
+
+              <div class="flex flex-wrap gap-1 text-[10px] mb-2">
+                <span class="px-2 py-1 rounded-full bg-emerald-50 text-emerald-700">Outdoor</span>
+                <span class="px-2 py-1 rounded-full bg-emerald-50 text-emerald-700">Chill</span>
+                <span class="px-2 py-1 rounded-full bg-emerald-50 text-emerald-700">Small group</span>
+              </div>
+
+              <div class="flex flex-wrap gap-4 text-[10px] text-gray-500">
+                <span>📍 Zaghouan</span>
+                <span>📅 Saturday · 18:00</span>
+                <span>🕒 1 night</span>
+              </div>
+            </div>
+
+            <!-- NEW SINGLE BUTTON -->
+            <div class="flex justify-end mt-3 text-xs">
+              <a href="EventDetails.html"
+                 class="px-4 py-1.5 rounded-full bg-[#a00000] text-white hover:bg-[#7c0000] shadow">
+                Join Event
+              </a>
+            </div>
+
+          </div>
+        </article>
+
+        <!-- ========== CARD 2 ========== -->
+        <article class="bg-white rounded-[24px] shadow-xl border border-gray-200 overflow-hidden min-h-[360px] flex flex-col">
+          <div class="flex justify-between items-center px-5 pt-3 text-[10px]">
+            <span class="px-3 py-1 rounded-full bg-[#b00020] text-white">New</span>
+            <span class="px-3 py-1 rounded-full bg-gray-800 text-white">8 players total</span>
+          </div>
+
+          <div class="px-5 mt-2">
+            <div class="w-full h-32 rounded-2xl bg-cover bg-center"
+                 style="background-image:url('assets/basket.jpg');"></div>
+          </div>
+
+          <div class="flex-1 px-5 pt-3 pb-4 flex flex-col justify-between">
+            <div>
+              <div class="flex justify-between items-start gap-2">
+                <h3 class="font-semibold text-[15px] leading-snug">
+                  NBA Vibes · 3v3 Tournament
+                </h3>
+                <div class="bg-amber-400 text-white rounded-full px-3 py-2 text-[10px] text-center leading-tight">
+                  <div class="font-bold text-[12px]">74%</div>
+                  <div>GOOD</div>
+                  <div>MATCH</div>
+                </div>
+              </div>
+
+              <p class="text-xs text-gray-600 mt-2 mb-3 leading-snug">
+                Fast-paced games with short rounds.
+              </p>
+
+              <div class="flex flex-wrap gap-1 text-[10px] mb-2">
+                <span class="px-2 py-1 rounded-full bg-emerald-50 text-emerald-700">Basketball</span>
+                <span class="px-2 py-1 rounded-full bg-emerald-50 text-emerald-700">Competition</span>
+                <span class="px-2 py-1 rounded-full bg-emerald-50 text-emerald-700">Short games</span>
+              </div>
+
+              <div class="flex flex-wrap gap-4 text-[10px] text-gray-500">
+                <span>📍 Sports hall</span>
+                <span>📅 Sunday · 16:00</span>
+                <span>🏆 Prizes</span>
+              </div>
+            </div>
+
+            <!-- NEW SINGLE BUTTON -->
+            <div class="flex justify-end mt-3 text-xs">
+              <a href="EventDetails.html"
+                 class="px-4 py-1.5 rounded-full bg-[#a00000] text-white hover:bg-[#7c0000] shadow">
+                Join Event
+              </a>
+            </div>
+
+          </div>
+        </article>
+
+        <!-- ========== CARD 3 ========== -->
+        <article class="bg-white rounded-[24px] shadow-xl border border-gray-200 overflow-hidden min-h-[360px] flex flex-col">
+          <div class="flex justify-between items-center px-5 pt-3 text-[10px]">
+            <span class="px-3 py-1 rounded-full bg-amber-500 text-white">Hot pick</span>
+            <span class="px-3 py-1 rounded-full bg-gray-800 text-white">Team favorite</span>
+          </div>
+
+          <div class="px-5 mt-2">
+            <div class="w-full h-32 rounded-2xl bg-cover bg-center"
+                 style="background-image:url('assets/takwira.jpg');"></div>
+          </div>
+
+          <div class="flex-1 px-5 pt-3 pb-4 flex flex-col justify-between">
+            <div>
+              <div class="flex justify-between items-start gap-2">
+                <h3 class="font-semibold text-[15px] leading-snug">
+                  Takwira · Night Match
+                </h3>
+                <div class="bg-emerald-500 text-white rounded-full px-3 py-2 text-[10px] text-center leading-tight">
+                  <div class="font-bold text-[12px]">87%</div>
+                  <div>GREAT</div>
+                  <div>MATCH</div>
+                </div>
+              </div>
+
+              <p class="text-xs text-gray-600 mt-2 mb-3 leading-snug">
+                Friendly but intense 6v6 under the lights.
+              </p>
+
+              <div class="flex flex-wrap gap-1 text-[10px] mb-2">
+                <span class="px-2 py-1 rounded-full bg-emerald-50 text-emerald-700">Sports</span>
+                <span class="px-2 py-1 rounded-full bg-emerald-50 text-emerald-700">Team spirit</span>
+                <span class="px-2 py-1 rounded-full bg-emerald-50 text-emerald-700">Night</span>
+              </div>
+
+              <div class="flex flex-wrap gap-4 text-[10px] text-gray-500">
+                <span>📍 Campus field</span>
+                <span>📅 Friday · 21:00</span>
+                <span>All levels</span>
+              </div>
+            </div>
+
+            <!-- NEW SINGLE BUTTON -->
+            <div class="flex justify-end mt-3 text-xs">
+              <a href="EventDetails.html"
+                 class="px-4 py-1.5 rounded-full bg-[#a00000] text-white hover:bg-[#7c0000] shadow">
+                Join Event
+              </a>
+            </div>
+
+          </div>
+        </article>
+
+        <!-- ========== CARD 4 ========== -->
+        <article class="bg-white rounded-[24px] shadow-xl border border-gray-200 overflow-hidden min-h-[360px] flex flex-col">
+          <div class="flex justify-between items-center px-5 pt-3 text-[10px]">
+            <span class="px-3 py-1 rounded-full bg-rose-500 text-white">Focus mode</span>
+            <span class="px-3 py-1 rounded-full bg-gray-800 text-white">3 seats left</span>
+          </div>
+
+          <div class="px-5 mt-2">
+            <div class="w-full h-32 rounded-2xl bg-cover bg-center"
+                 style="background-image:url('assets/study-campers.jpg');"></div>
+          </div>
+
+          <div class="flex-1 px-5 pt-3 pb-4 flex flex-col justify-between">
+            <div>
+              <div class="flex justify-between items-start gap-2">
+                <h3 class="font-semibold text-[15px] leading-snug">
+                  Study Hive · Exam Sprint
+                </h3>
+                <div class="bg-emerald-500 text-white rounded-full px-3 py-2 text-[10px] text-center leading-tight">
+                  <div class="font-bold text-[12px]">89%</div>
+                  <div>STRONG</div>
+                  <div>MATCH</div>
+                </div>
+              </div>
+
+              <p class="text-xs text-gray-600 mt-2 mb-3 leading-snug">
+                Silent focus hours, shared notes, and mini breaks.
+              </p>
+
+              <div class="flex flex-wrap gap-1 text-[10px] mb-2">
+                <span class="px-2 py-1 rounded-full bg-emerald-50 text-emerald-700">Academic</span>
+                <span class="px-2 py-1 rounded-full bg-emerald-50 text-emerald-700">Focus</span>
+              </div>
+
+              <div class="flex flex-wrap gap-4 text-[10px] text-gray-500">
+                <span>📍 Library</span>
+                <span>📅 Weeknights</span>
+                <span>☕ BYO coffee</span>
+              </div>
+            </div>
+
+            <!-- NEW SINGLE BUTTON -->
+            <div class="flex justify-end mt-3 text-xs">
+              <a href="EventDetails.html"
+                 class="px-4 py-1.5 rounded-full bg-[#a00000] text-white hover:bg-[#7c0000] shadow">
+                Join Event
+              </a>
+            </div>
+
+          </div>
+        </article>
+
+        <!-- ========== CARD 5 ========== -->
+        <article class="bg-white rounded-[24px] shadow-xl border border-gray-200 overflow-hidden min-h-[360px] flex flex-col">
+          <div class="flex justify-between items-center px-5 pt-3 text-[10px]">
+            <span class="px-3 py-1 rounded-full bg-pink-500 text-white">Chill</span>
+            <span class="px-3 py-1 rounded-full bg-gray-800 text-white">Open slots</span>
+          </div>
+
+          <div class="px-5 mt-2">
+            <div class="w-full h-32 rounded-2xl bg-cover bg-center"
+                 style="background-image:url('assets/open-mic.jpg');"></div>
+          </div>
+
+          <div class="flex-1 px-5 pt-3 pb-4 flex flex-col justify-between">
+            <div>
+              <div class="flex justify-between items-start gap-2">
+                <h3 class="font-semibold text-[15px] leading-snug">
+                  Campus Jam · Open Mic
+                </h3>
+                <div class="bg-rose-400 text-white rounded-full px-3 py-2 text-[10px] text-center leading-tight">
+                  <div class="font-bold text-[12px]">58%</div>
+                  <div>MAYBE</div>
+                  <div>VIBE</div>
+                </div>
+              </div>
+
+              <p class="text-xs text-gray-600 mt-2 mb-3 leading-snug">
+                Bring an instrument, a track, or just yourself.
+              </p>
+
+              <div class="flex flex-wrap gap-1 text-[10px] mb-2">
+                <span class="px-2 py-1 rounded-full bg-emerald-50 text-emerald-700">Social</span>
+                <span class="px-2 py-1 rounded-full bg-emerald-50 text-emerald-700">Chill</span>
+                <span class="px-2 py-1 rounded-full bg-emerald-50 text-emerald-700">Evening</span>
+              </div>
+
+              <div class="flex flex-wrap gap-4 text-[10px] text-gray-500">
+                <span>📍 Main hall</span>
+                <span>📅 Thursday · 19:00</span>
+              </div>
+            </div>
+
+            <!-- NEW SINGLE BUTTON -->
+            <div class="flex justify-end mt-3 text-xs">
+              <a href="EventDetails.html"
+                 class="px-4 py-1.5 rounded-full bg-[#a00000] text-white hover:bg-[#7c0000] shadow">
+                Join Event
+              </a>
+            </div>
+
+          </div>
+        </article>
+
+        <!-- ========== CARD 6 ========== -->
+        <article class="bg-white rounded-[24px] shadow-xl border border-gray-200 overflow-hidden min-h-[360px] flex flex-col">
+          <div class="flex justify-between items-center px-5 pt-3 text-[10px]">
+            <span class="px-3 py-1 rounded-full bg-[#b00020] text-white">Trending</span>
+            <span class="px-3 py-1 rounded-full bg-gray-800 text-white">4 spots left</span>
+          </div>
+
+          <div class="px-5 mt-2">
+            <div class="w-full h-32 rounded-2xl bg-cover bg-center"
+                 style="background-image:url('assets/campers.jpg');"></div>
+          </div>
+
+          <div class="flex-1 px-5 pt-3 pb-4 flex flex-col justify-between">
+            <div>
+              <div class="flex justify-between items-start gap-2">
+                <h3 class="font-semibold text-[15px] leading-snug">
+                  Campers · Weekend Escape
+                </h3>
+                <div class="bg-emerald-500 text-white rounded-full px-3 py-2 text-[10px] text-center leading-tight">
+                  <div class="font-bold text-[12px]">92%</div>
+                  <div>GREAT</div>
+                  <div>MATCH</div>
+                </div>
+              </div>
+
+              <p class="text-xs text-gray-600 mt-2 mb-3 leading-snug">
+                Night hike, campfire stories, new group.
+              </p>
+
+              <div class="flex flex-wrap gap-1 text-[10px] mb-2">
+                <span class="px-2 py-1 rounded-full bg-emerald-50 text-emerald-700">Outdoor</span>
+                <span class="px-2 py-1 rounded-full bg-emerald-50 text-emerald-700">Weekend</span>
+              </div>
+
+              <div class="flex flex-wrap gap-4 text-[10px] text-gray-500">
+                <span>📍 Zaghouan</span>
+                <span>📅 Saturday · 18:00</span>
+              </div>
+            </div>
+
+            <!-- NEW SINGLE BUTTON -->
+            <div class="flex justify-end mt-3 text-xs">
+              <a href="EventDetails.html"
+                 class="px-4 py-1.5 rounded-full bg-[#a00000] text-white hover:bg-[#7c0000] shadow">
+                Join Event
+              </a>
+            </div>
+
+          </div>
+        </article>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- ================= FOOTER ================= -->
+  <iframe src="footer.html" class="w-full h-64 border-none mt-10"></iframe>
+
+
+</body>
+</html>
