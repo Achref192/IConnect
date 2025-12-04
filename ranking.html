@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>IConnect - Classement</title>
+
+    <!-- FICHIER CSS À LIER -->
+    <link rel="stylesheet" href="styles-ranking.css">
+
+    <!-- Police Poppins -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="dist/output.css">
+
+</head>
+
+<body class="bg-gradient-to-b from-pink-50 to-pink-100 min-h-screen">
+
+<!-- Page Container -->
+<div class="flex flex-col min-h-screen">
+
+    <!-- NAVBAR -->
+    <nav class="bg-white shadow-sm">
+        <div class="max-w-7xl mx-auto px-6 py-4">
+            <div class="flex items-center justify-between">
+                <div class="text-2xl font-bold text-red-800">ICONNECT</div>
+
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="#" class="text-red-800 font-semibold hover:text-red-600 transition-colors">Home</a>
+                    <a href="#" class="text-red-800 font-semibold hover:text-red-600 transition-colors">Activities</a>
+                    <a href="#" class="text-red-800 font-semibold hover:text-red-600 transition-colors">Matching</a>
+                    <a href="#" class="text-red-800 font-semibold hover:text-red-600 transition-colors">About Us</a>
+                </div>
+
+                <button class="flex items-center gap-2 bg-red-800 text-white px-6 py-2 rounded-full hover:bg-red-700 transition-all shadow-md hover:shadow-lg">
+                    <span class="font-semibold">Log Out</span>
+                    <i class="fas fa-sign-out-alt"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- CONTENU PRINCIPAL -->
+    <main class="flex-1 flex justify-center py-10 px-5">
+
+        <!-- Classement des membres -->
+        <section class="ranking-card">
+
+            <header class="ranking-header">
+                <div class="ranking-title-block">
+                    <div class="ranking-icon">🏆</div>
+                    <h1>Classement des membres</h1>
+                </div>
+
+                <div class="ranking-legend">
+                    <span><span class="legend-dot legend-top1"></span>Top 1</span>
+                    <span><span class="legend-dot legend-top2"></span>Top 2</span>
+                    <span><span class="legend-dot legend-top3"></span>Top 3</span>
+                </div>
+            </header>
+
+            <div class="ranking-chart">
+                <div class="chart-bar chart-bar-1"></div>
+                <div class="chart-bar chart-bar-2"></div>
+                <div class="chart-bar chart-bar-3"></div>
+                <div class="chart-bar chart-bar-4"></div>
+            </div>
+        </section>
+
+        <!-- BANDEAU TOP MEMBRES -->
+        <section class="top-members-strip">
+            <div class="top-member">
+                <div class="top-member-name">Rayen</div>
+                <div class="top-member-points">850 pts</div>
+                <span class="top-badge">#1</span>
+            </div>
+            <div class="top-member">
+                <div class="top-member-name">Chaima</div>
+                <div class="top-member-points">720 pts</div>
+                <span class="top-badge">#2</span>
+            </div>
+            <div class="top-member">
+                <div class="top-member-name">Ahmed</div>
+                <div class="top-member-points">600 pts</div>
+                <span class="top-badge">#3</span>
+            </div>
+            <div class="top-member">
+                <div class="top-member-name">Sofia</div>
+                <div class="top-member-points">450 pts</div>
+                <span class="top-badge">#4</span>
+            </div>
+        </section>
+
+        <!-- TABLEAU -->
+        <section class="ranking-table-section">
+            <table class="ranking-table">
+                <thead>
+                    <tr>
+                        <th>Rang</th>
+                        <th>Membre</th>
+                        <th>Points</th>
+                        <th>Projets Complétés</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>Chaima Ben Ali</td>
+                        <td>720</td>
+                        <td>10</td>
+                    </tr>
+
+                    <tr>
+                        <td>2</td>
+                        <td>Yassine Ayache</td>
+                        <td>520</td>
+                        <td>8</td>
+                    </tr>
+
+                    <tr>
+                        <td>3</td>
+                        <td>Ilhem Cherni</td>
+                        <td>600</td>
+                        <td>5</td>
+                    </tr>
+
+                    <tr>
+                        <td>4</td>
+                        <td>Manel Jlassi</td>
+                        <td>450</td>
+                        <td>2</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!-- BOUTONS -->
+        <div class="ranking-actions">
+            <button class="btn-secondary">Retour à l'accueil</button>
+            <button class="btn-primary">Plus de détails</button>
+        </div>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="bg-gray-50 border-t border-gray-200 p-6 fixed bottom-0 left-0 w-full">
+        <div class="max-w-7xl mx-auto">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div>
+                    <div class="mb-2">
+                        <img src="../assets/esprit.png" alt="ESPRIT Logo" class="w-24 h-auto">
+                    </div>
+                    <div class="text-sm text-gray-600 ">École Supérieure Privée d'Ingénierie et de Technologies</div>
+                </div>
+
+                <div>
+                    <h3 class="text-red-800 font-bold mb-4">Contact</h3>
+                    <ul class="space-y-2 text-sm text-gray-600">
+                        <li class="flex items-center gap-2">
+                            <i class="fa-brands fa-facebook text-red-800"></i>
+                            <a href="#" class="hover:text-red-800 transition-colors">Facebook</a>
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <i class="fa-brands fa-linkedin text-red-800"></i>
+                            <a href="#" class="hover:text-red-800 transition-colors">LinkedIn</a>
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <i class="fa-brands fa-instagram text-red-800"></i>
+                            <a href="#" class="hover:text-red-800 transition-colors">Instagram</a>
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <i class="fa-brands fa-twitter text-red-800"></i>
+                            <a href="#" class="hover:text-red-800 transition-colors">Twitter</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h3 class="text-red-800 font-bold mb-4">IConnect Team</h3>
+                    <ul class="space-y-2 text-sm text-gray-600">
+                        <li>Adaem Chebbi</li>
+                        <li>Achref Arfaoui</li>
+                        <li>Erij Ben Saleh</li>
+                        <li>Ines Manai</li>
+                        <li>Moemen Ouled Ali</li>
+                        <li>Ibtihel Mechergui</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="border-t border-gray-200 mt-1 pt-1 text-center text-sm text-gray-600">
+                © 2025 IConnect — All Rights Reserved
+            </div>
+        </div>
+    </footer>
+
+</div>
+
+</body>
+</html>
