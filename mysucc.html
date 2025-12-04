@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="an">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IConnect - My Success</title>
+
+    <!-- Tailwind via CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body class="min-h-screen flex flex-col bg-gradient-to-br from-white bg-[radial-gradient(circle_at_center)via-[rgba(255,200,200,0.55)] to-[rgba(255,80,80,0.65)]">
+
+    <!-- NAVBAR (imported file) -->
+    <iframe src="nav-bar.html" class="w-full h-20 border-none"></iframe>
+
+    <!-- MAIN -->
+    <main class="p-10 flex justify-center">
+        <div class="bg-white w-full max-w-6xl rounded-3xl shadow-xl p-10 relative">
+
+            <!-- Back -->
+            <button class="absolute left-6 top-6 text-red-700 text-3xl font-bold hover:text-red-800 transition">
+                &larr;
+            </button>
+
+            <!-- Title -->
+            <h1 class="text-4xl font-extrabold text-center mb-14 drop-shadow-md text-gray-900">
+                My Success
+            </h1>
+
+            <!-- SUCCESS CARDS -->
+            <div class="flex flex-col gap-8">
+
+                <!-- CARD 1 - Purple -->
+                <article
+                    class="flex flex-col md:flex-row md:items-center justify-between gap-4 rounded-3xl px-10 py-8 shadow-lg bg-[#D8C4FF]">
+                    <div class="space-y-4">
+                        <h2 class="text-lg md:text-xl font-bold text-gray-900">
+                            1st prize at the ESPRIT innovation competition
+                        </h2>
+                        <!-- red pill points -->
+                        <span
+                            class="inline-flex items-center px-6 py-2 rounded-full bg-red-500 text-white text-sm font-semibold shadow">
+                            200 pts
+                        </span>
+                    </div>
+
+                    <!-- peach pill button -->
+                    <a href="succdetail.html"
+                        class="px-7 py-2 rounded-full bg-gradient-to-r from-[#FFB9B9] to-[#FF9A9A]
+                        text-gray-900 font-semibold shadow hover:shadow-lg transition-all duration-200">
+                        See details
+                    </a>
+                </article>
+
+                <!-- CARD 2 - Gray -->
+                <article
+                    class="flex flex-col md:flex-row md:items-center justify-between gap-4 rounded-3xl px-10 py-8 shadow-lg bg-[#E1DCE7]">
+                    <div class="space-y-4">
+                        <h2 class="text-lg md:text-xl font-bold text-gray-900">
+                            Participation in the technological innovation day
+                        </h2>
+                        <span
+                            class="inline-flex items-center px-6 py-2 rounded-full bg-red-500 text-white text-sm font-semibold shadow">
+                            220 pts
+                        </span>
+                    </div>
+
+                    <button
+                        class="inline-flex items-center justify-center px-6 py-2 rounded-full bg-[#FFB9B9]
+                            text-sm font-semibold text-gray-800 shadow hover:shadow-md transition">
+                        See details
+                    </button>
+                </article>
+
+                <!-- CARD 3 - Blue -->
+                <article
+                    class="flex flex-col md:flex-row md:items-center justify-between gap-4 rounded-3xl px-10 py-8 shadow-lg bg-[#CFE1FF]">
+                    <div class="space-y-4">
+                        <h2 class="text-lg md:text-xl font-bold text-gray-900">
+                            1st prize in the technology projects competition
+                        </h2>
+                        <span
+                            class="inline-flex items-center px-6 py-2 rounded-full bg-red-500 text-white text-sm font-semibold shadow">
+                            350 pts
+                        </span>
+                    </div>
+
+                    <button
+                        class="inline-flex items-center justify-center px-6 py-2 rounded-full bg-[#FFB9B9]
+                            text-sm font-semibold text-gray-800 shadow hover:shadow-md transition">
+                        See details
+                    </button>
+                </article>
+
+            </div>
+
+            <!-- PAGINATION -->
+            <div class="flex justify-center items-center space-x-4 text-gray-700 mt-12 text-sm">
+                <span class="opacity-50 cursor-not-allowed">&larr; Previous</span>
+                <span class="px-3 py-1 bg-gray-800 text-white rounded cursor-pointer">1</span>
+                <span class="px-2 cursor-pointer hover:bg-gray-200 rounded">2</span>
+                <span>...</span>
+                <span class="cursor-pointer hover:text-red-600">Next →</span>
+            </div>
+
+            <!-- BUTTONS -->
+            <div class="flex justify-between mt-10">
+
+                <!-- GO TO HISTORY -->
+                <a href="hist.html"
+                class="bg-red-600 text-white px-8 py-3 rounded-lg font-semibold hover:bg-red-700 transition inline-block">
+                    View my history
+                </a>
+
+                <!-- SHARE BUTTON -->
+                <button class="bg-red-600 text-white px-8 py-3 rounded-lg font-semibold hover:bg-red-700 transition">
+                    Share
+                </button>
+
+            </div>
+
+        </div>
+    </main>
+
+    <!-- FOOTER (imported file) -->
+    <iframe src="footer.html" class="w-full h-64 border-none mt-10"></iframe>
+
+</body>
+</html>
