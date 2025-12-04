@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Profile – iConnect</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body
+  class="font-[Segoe_UI,system-ui] min-h-screen flex flex-col bg-[radial-gradient(circle_at_center,white,rgba(255,180,180,0.55),rgba(255,80,80,0.65))]">
+
+  <!-- ================= NAVBAR ================= -->
+   <iframe src="nav-bar.html" class="w-full h-20 border-none"></iframe>
+
+
+  <!-- ================= MAIN CONTENT ================= -->
+  <main class="flex-1 flex flex-col items-center mt-12 mb-16 px-4">
+
+    <!-- BACK BUTTON -->
+    <div class="w-full max-w-[850px] mb-4">
+      <a href="Home.html" class="text-3xl text-black hover:text-[#a00000] transition">
+        ←
+      </a>
+    </div>
+
+    <!-- PROFILE CARD -->
+    <section
+      class="bg-white w-full max-w-[850px] rounded-[28px] shadow-xl border border-gray-200 px-12 py-10">
+
+      <!-- Profile Icon + Name -->
+      <div class="flex flex-col items-center">
+        <div
+          class="w-20 h-20 rounded-full bg-gray-300 flex items-center justify-center text-white text-3xl mb-3">
+          <span>👤</span>
+        </div>
+
+        <h2 class="text-2xl font-semibold text-gray-800">Ben Salah Erij</h2>
+      </div>
+
+      <!-- Separator -->
+      <div class="w-full border-t border-[#a00000] mt-6 mb-6"></div>
+
+      <!-- Bio -->
+      <p class="text-sm text-gray-700 leading-relaxed mb-6">
+        Bonjour, je suis Erij. Mes principaux intérêts sont le camping, le karaoké et les activités
+        en plein air. J’aime passer du temps dans la nature, découvrir de nouveaux endroits, et
+        profiter de moments simples loin du stress quotidien.
+        <br><br>
+        Le karaoké est pour moi une façon de m'amuser, de partager de bons moments avec mes amis et
+        de lâcher prise. Ces activités m’apportent énergie, liberté et bonne humeur au quotidien.
+      </p>
+
+      <!-- INFO GRID -->
+      <div class="grid grid-cols-2 text-sm mb-6 mt-4">
+
+        <div class="flex flex-col gap-2 text-[#a00000]">
+          <p><span class="font-semibold">Age :</span> 21</p>
+        </div>
+
+        <div class="flex flex-col items-end gap-2 text-[#a00000]">
+          <p><span class="font-semibold">Disponible</span></p>
+        </div>
+
+      </div>
+
+      <!-- LOCATION -->
+      <div class="flex flex-col items-center mt-4 mb-8 text-gray-700">
+        <div class="flex items-center gap-2 text-lg">
+          <span>📍</span>
+          <span class="text-[15px]">Tunis</span>
+        </div>
+      </div>
+
+      <!-- BUTTONS -->
+      <div class="flex justify-center gap-6 mb-4">
+        <a href="calendar.html"
+   class="bg-[#a00000] text-white px-7 py-2 rounded-md shadow hover:bg-[#7c0000] text-sm inline-block">
+    My activities
+</a>
+
+<a href="Achievements.html"
+   class="bg-[#a00000] text-white px-7 py-2 rounded-md shadow hover:bg-[#7c0000] text-sm inline-block">
+    Achievements
+</a>
+
+      </div>
+
+    </section>
+  </main>
+
+  <!-- ================= FOOTER ================= -->
+  <iframe src="footer.html" class="w-full h-64 border-none mt-10"></iframe>
+
+</body>
+</html>
