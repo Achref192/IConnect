@@ -1,0 +1,29 @@
+/* ========================= */
+/* PAGE 2 : ajustements      */
+/* ========================= */
+
+/* rang à gauche dans la carte (N°5, N°6) */
+.left-rank {
+    font-size: 12px;
+    font-weight: 600;
+    margin-right: 10px;
+    color: #4d4d4d;
+}
+
+/* fond rose clair pour Faten */
+.card-softpink {
+    background: #ffd6dd;
+}
+
+/* fond brun-violet pour Haifa */
+.card-brown {
+    background: #8c6573;
+    color: #fff;
+}
+
+/* Texte plus clair sur la carte brune */
+.card-brown .user-meta,
+.card-brown .user-subtext,
+.card-brown .progress-label {
+    color: #f4e9f1;
+}

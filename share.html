@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Share Profile - IConnect</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+        
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+
+        /* Animation d'entrée */
+        @keyframes slideUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .share-card {
+            animation: slideUp 0.6s ease-out;
+        }
+
+        /* Animation des boutons */
+        @keyframes fadeInScale {
+            from {
+                opacity: 0;
+                transform: scale(0.8);
+            }
+            to {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+
+        .share-button {
+            animation: fadeInScale 0.4s ease-out forwards;
+            opacity: 0;
+        }
+
+        .share-button:nth-child(1) { animation-delay: 0.1s; }
+        .share-button:nth-child(2) { animation-delay: 0.2s; }
+        .share-button:nth-child(3) { animation-delay: 0.3s; }
+        .share-button:nth-child(4) { animation-delay: 0.4s; }
+
+        /* Gradient animé */
+        @keyframes gradientShift {
+            0% {
+                background-position: 0% 50%;
+            }
+            50% {
+                background-position: 100% 50%;
+            }
+            100% {
+                background-position: 0% 50%;
+            }
+        }
+
+        .animated-gradient {
+            background: linear-gradient(-45deg, #fce7f3, #fbcfe8, #f9a8d4, #fecdd3);
+            background-size: 400% 400%;
+            animation: gradientShift 15s ease infinite;
+        }
+
+        /* Animation du header */
+        @keyframes slideDown {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .header-animated {
+            animation: slideDown 0.5s ease-out;
+        }
+
+        /* Hover effect pour les boutons de partage */
+        .share-button:hover {
+            transform: translateY(-5px) scale(1.05);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+        }
+
+        /* Animation du bouton copie */
+        .copy-btn-animation {
+            animation: pulse 0.3s ease-in-out;
+        }
+
+        @keyframes pulse {
+            0%, 100% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.1);
+            }
+        }
+
+        /* Ripple effect */
+        .ripple {
+            position: relative;
+            overflow: hidden;
+        }
+
+        .ripple::after {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 0;
+            height: 0;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, 0.5);
+            transform: translate(-50%, -50%);
+            transition: width 0.6s, height 0.6s;
+        }
+
+        .ripple:active::after {
+            width: 300px;
+            height: 300px;
+        }
+
+        /* Navbar hover */
+        nav a {
+            transition: all 0.3s ease;
+        }
+
+        nav a:hover {
+            color: #dc2626;
+            transform: translateY(-2px);
+        }
+
+        nav a.active {
+            color: #dc2626;
+            font-weight: 600;
+        }
+
+        /* Animation de l'icône principale */
+        @keyframes float {
+            0%, 100% {
+                transform: translateY(0px);
+            }
+            50% {
+                transform: translateY(-10px);
+            }
+        }
+
+        .float-icon {
+            animation: float 3s ease-in-out infinite;
+        }
+
+        /* Custom scrollbar */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        
+        ::-webkit-scrollbar-track {
+            background: #f1f1f1;
+            border-radius: 10px;
+        }
+        
+        ::-webkit-scrollbar-thumb {
+            background: linear-gradient(180deg, #d1d5db, #9ca3af);
+            border-radius: 10px;
+        }
+        
+        ::-webkit-scrollbar-thumb:hover {
+            background: linear-gradient(180deg, #9ca3af, #6b7280);
+        }
+    </style>
+</head>
+<body class="animated-gradient min-h-screen">
+
+    <!-- NAVBAR -->
+    <nav class="bg-white shadow-sm">
+        <div class="max-w-7xl mx-auto px-6 py-4">
+            <div class="flex items-center justify-between">
+                <div class="text-2xl font-bold text-red-800">ICONNECT</div>
+
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="ranking-users.html" class="text-red-800 font-semibold hover:text-red-600 transition-colors">Home</a>
+                    <a href="#" class="text-red-800 font-semibold hover:text-red-600 transition-colors">Activities</a>
+                    <a href="#" class="text-red-800 font-semibold hover:text-red-600 transition-colors">Matching</a>
+                    <a href="#" class="text-red-800 font-semibold hover:text-red-600 transition-colors">Settings</a>
+                    <a href="#" class="text-red-800 font-semibold hover:text-red-600 transition-colors">About Us</a>
+                </div>
+
+                <button class="flex items-center gap-2 bg-red-800 text-white px-6 py-2 rounded-full hover:bg-red-700 transition-all shadow-md hover:shadow-lg">
+                    <span class="font-semibold">Log Out</span>
+                    <i class="fas fa-sign-out-alt"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- CONTENU PRINCIPAL -->
+    <div class="flex items-center justify-center p-6 min-h-[calc(100vh-240px)]">
+        <div class="share-card w-full max-w-lg bg-white rounded-3xl shadow-2xl overflow-hidden p-8">
+            
+            <!-- Header avec icône -->
+            <div class="flex items-start gap-4 mb-8">
+                <div class="float-icon text-5xl">
+                    👥
+                </div>
+                <div>
+                    <h1 class="text-3xl font-bold text-gray-800 mb-2">Share my profile</h1>
+                    <p class="text-gray-500 text-sm">Share your profile link using your favourite apps.</p>
+                </div>
+            </div>
+
+            <!-- URL avec bouton Copie -->
+            <div class="flex items-center gap-3 mb-8">
+                <div class="flex-1 bg-gray-100 rounded-full px-5 py-3 text-gray-700 text-sm font-medium border-2 border-gray-200">
+                    https://mysite.com/user/username
+                </div>
+                <button id="copyBtn" class="ripple bg-indigo-600 hover:bg-indigo-700 text-white px-6 py-3 rounded-full font-medium transition-all shadow-md hover:shadow-lg">
+                    Copie
+                </button>
+            </div>
+
+            <!-- Boutons de partage -->
+            <div class="grid grid-cols-2 gap-4 mb-6">
+                
+                <!-- WhatsApp -->
+                <button class="share-button ripple bg-white border-2 border-gray-200 hover:border-green-500 rounded-2xl p-6 transition-all group">
+                    <div class="flex flex-col items-center gap-3">
+                        <div class="w-16 h-16 bg-gradient-to-br from-green-400 to-green-600 rounded-2xl flex items-center justify-center text-white text-3xl shadow-lg group-hover:scale-110 transition-transform">
+                            💬
+                        </div>
+                        <span class="text-gray-700 font-medium group-hover:text-green-600 transition-colors">WhatsApp</span>
+                    </div>
+                </button>
+
+                <!-- Email -->
+                <button class="share-button ripple bg-white border-2 border-gray-200 hover:border-blue-500 rounded-2xl p-6 transition-all group">
+                    <div class="flex flex-col items-center gap-3">
+                        <div class="w-16 h-16 bg-gradient-to-br from-blue-400 to-blue-600 rounded-2xl flex items-center justify-center text-white text-3xl shadow-lg group-hover:scale-110 transition-transform">
+                            ✉️
+                        </div>
+                        <span class="text-gray-700 font-medium group-hover:text-blue-600 transition-colors">Email</span>
+                    </div>
+                </button>
+
+                <!-- LinkedIn -->
+                <button class="share-button ripple bg-white border-2 border-gray-200 hover:border-blue-700 rounded-2xl p-6 transition-all group">
+                    <div class="flex flex-col items-center gap-3">
+                        <div class="w-16 h-16 bg-gradient-to-br from-blue-500 to-blue-700 rounded-2xl flex items-center justify-center text-white text-3xl shadow-lg group-hover:scale-110 transition-transform">
+                            🔗
+                        </div>
+                        <span class="text-gray-700 font-medium group-hover:text-blue-700 transition-colors">LinkedIn</span>
+                    </div>
+                </button>
+
+                <!-- QR Code -->
+                <button class="share-button ripple bg-white border-2 border-gray-200 hover:border-gray-800 rounded-2xl p-6 transition-all group">
+                    <div class="flex flex-col items-center gap-3">
+                        <div class="w-16 h-16 bg-gradient-to-br from-gray-700 to-gray-900 rounded-2xl flex items-center justify-center text-white text-3xl shadow-lg group-hover:scale-110 transition-transform">
+                            📱
+                        </div>
+                        <span class="text-gray-700 font-medium group-hover:text-gray-800 transition-colors">QR Code</span>
+                    </div>
+                </button>
+
+            </div>
+
+            <!-- Message de confidentialité -->
+            <div class="bg-green-50 border-2 border-green-200 rounded-2xl p-4 flex items-center gap-3">
+                <div class="w-8 h-8 bg-green-500 rounded-full flex items-center justify-center text-white flex-shrink-0">
+                    ✓
+                </div>
+                <p class="text-green-800 text-sm font-medium">
+                    Votre profil ne partage aucune donnée sensible.
+                </p>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="bg-white mt-auto py-8 px-8 border-t border-gray-200">
+        <div class="max-w-7xl mx-auto">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-6">
+                <!-- ESPR -->
+                <div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-4">ESPR</h3>
+                </div>
+
+                <!-- Contact -->
+                <div>
+                    <h3 class="text-lg font-semibold text-gray-800 mb-3">Contact</h3>
+                    <ul class="space-y-2 text-gray-600">
+                        <li class="hover:text-red-600 transition cursor-pointer">Email</li>
+                        <li class="hover:text-red-600 transition cursor-pointer">LinkedIn</li>
+                        <li class="hover:text-red-600 transition cursor-pointer">Instagram</li>
+                        <li class="hover:text-red-600 transition cursor-pointer">Twitter</li>
+                    </ul>
+                </div>
+
+                <!-- IConnect Team -->
+                <div class="md:col-span-2">
+                    <h3 class="text-lg font-semibold text-gray-800 mb-3">IConnect Team</h3>
+                    <ul class="grid grid-cols-2 gap-2 text-gray-600">
+                        <li class="hover:text-red-600 transition cursor-pointer">Adem Chebbi</li>
+                        <li class="hover:text-red-600 transition cursor-pointer">Achref Arfaoui</li>
+                        <li class="hover:text-red-600 transition cursor-pointer">Inés Manai</li>
+                        <li class="hover:text-red-600 transition cursor-pointer">Erij Ben Salah</li>
+                        <li class="hover:text-red-600 transition cursor-pointer">Moemen Ouled Ali</li>
+                        <li class="hover:text-red-600 transition cursor-pointer">Ibtyhel Mechergui</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Copyright -->
+            <div class="text-center text-gray-600 text-sm pt-6 border-t border-gray-200">
+                © 2025 IConnect – All Rights Reserved
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Fonction de copie avec animation
+        const copyBtn = document.getElementById('copyBtn');
+        copyBtn.addEventListener('click', function() {
+            const url = 'https://mysite.com/user/username';
+            navigator.clipboard.writeText(url).then(() => {
+                // Animation du bouton
+                this.classList.add('copy-btn-animation');
+                const originalText = this.textContent;
+                this.textContent = '✓ Copié!';
+                this.classList.add('bg-green-600');
+                this.classList.remove('bg-indigo-600');
+                
+                setTimeout(() => {
+                    this.textContent = originalText;
+                    this.classList.remove('bg-green-600', 'copy-btn-animation');
+                    this.classList.add('bg-indigo-600');
+                }, 2000);
+            });
+        });
+
+        // Animation des boutons de partage
+        document.querySelectorAll('.share-button').forEach(button => {
+            button.addEventListener('click', function() {
+                const platform = this.querySelector('span').textContent;
+                console.log('Partage vers:', platform);
+                
+                // Animation de feedback
+                this.style.transform = 'scale(0.95)';
+                setTimeout(() => {
+                    this.style.transform = '';
+                }, 150);
+                
+                // Simulation de partage
+                alert(`Partage vers ${platform} !`);
+            });
+        });
+    </script>
+
+</body>
+</html>

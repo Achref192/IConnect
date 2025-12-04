@@ -1,0 +1,13 @@
+/* Animations personnalisées pour les badges */
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+.badge-card {
+    transition: transform 0.3s ease, box-shadow 0.2s ease;
+}
+
+.badge-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
